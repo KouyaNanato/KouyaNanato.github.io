@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "build/dist", // コンパイルしたtsファイルを一つのjsファイルとして出力する
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": false,
+    "noImplicitReturns": false, // 戻り値が定義した型じゃないと検出
+    "noImplicitThis": false, // thisに型宣言がないと検出
+    "noImplicitAny": false, // 暗黙のany型宣言をエラーにする
+    "strictNullChecks": false, // nullを許容しない
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true // 使っていないローカル変数を検出する
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}
